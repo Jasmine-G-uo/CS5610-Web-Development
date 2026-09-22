@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTML &amp; CSS Fundamentals Practice</title>
+<meta name="description" content="A practice page demonstrating HTML structure, SEO tags, box model, font units, and CSS positioning.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ NAVBAR ============ -->
+<nav class="navbar">
+  <div class="nav-brand">HTML/CSS Practice</div>
+  <ul class="nav-links">
+    <li><a href="#task1">Structure &amp; Tags</a></li>
+    <li><a href="#task2">SEO</a></li>
+    <li><a href="#task3">3x3 Grid</a></li>
+    <li><a href="#task4">Box Model</a></li>
+    <li><a href="#task5">Font Sizes</a></li>
+    <li><a href="#task6">Positioning</a></li>
+  </ul>
+</nav>
+
+<!-- ============ MAIN CONTENT ============ -->
+<main>
+  <h1>HTML &amp; CSS Fundamentals — Self-Assessment</h1>
+
+  <!-- TASK 1 -->
+  <section id="task1">
+    <h2>1. Page Structure &amp; My Top 10 HTML Tags</h2>
+    <p>This page itself demonstrates the required structure: a navbar above, a main header (<code>&lt;h1&gt;</code>) here, four (or more) subheaders below (<code>&lt;h2&gt;</code>), and a footer at the bottom of the screen.</p>
+
+    <h3>My 10 most useful HTML tags</h3>
+    <ol>
+      <li><strong>&lt;div&gt;</strong> — generic block container, the backbone of layout.</li>
+      <li><strong>&lt;span&gt;</strong> — generic inline container, for styling part of text.</li>
+      <li><strong>&lt;a&gt;</strong> — hyperlinks, navigation.</li>
+      <li><strong>&lt;img&gt;</strong> — embedding images.</li>
+      <li><strong>&lt;ul&gt;/&lt;ol&gt;/&lt;li&gt;</strong> — lists, used constantly for nav menus and content.</li>
+      <li><strong>&lt;form&gt;, &lt;input&gt;, &lt;button&gt;</strong> — collecting user input.</li>
+      <li><strong>&lt;section&gt; / &lt;article&gt;</strong> — semantic grouping of content.</li>
+      <li><strong>&lt;h1&gt;–&lt;h6&gt;</strong> — headings, structure + SEO.</li>
+      <li><strong>&lt;table&gt;, &lt;tr&gt;, &lt;td&gt;</strong> — tabular data.</li>
+      <li><strong>&lt;meta&gt;</strong> — viewport, charset, SEO description, all in the &lt;head&gt;.</li>
+    </ol>
+  </section>
+
+  <!-- TASK 2 -->
+  <section id="task2">
+    <h2>2. Important Header Tags for SEO</h2>
+    <p>Search engines rely heavily on certain tags in the <code>&lt;head&gt;</code> and heading hierarchy to understand and rank a page. The most important ones:</p>
+    <ul>
+      <li><strong>&lt;title&gt;</strong> — shown as the clickable link in search results; single most important on-page SEO tag.</li>
+      <li><strong>&lt;meta name="description"&gt;</strong> — the snippet text shown under the title in search results.</li>
+      <li><strong>&lt;h1&gt;</strong> — should be used once per page, describing the main topic; a strong ranking signal.</li>
+      <li><strong>&lt;h2&gt;–&lt;h6&gt;</strong> — used for subtopics, in order, to create a logical outline crawlers can parse.</li>
+      <li><strong>&lt;meta name="viewport"&gt;</strong> — signals mobile-friendliness, a Google ranking factor.</li>
+      <li><strong>&lt;meta charset="UTF-8"&gt;</strong> — ensures content is indexed correctly, no garbled text.</li>
+      <li><strong>&lt;link rel="canonical"&gt;</strong> — avoids duplicate-content penalties.</li>
+      <li><strong>Open Graph tags (&lt;meta property="og:title"&gt;, etc.)</strong> — control how the page looks when shared on social media, indirectly boosting click-through rate.</li>
+      <li><strong>&lt;img alt="..."&gt;</strong> — not a header tag, but critical: describes images for image search and accessibility.</li>
+    </ul>
+  </section>
+
+  <!-- TASK 3 -->
+  <section id="task3">
+    <h2>3. A 3x3 Grid Using Only &lt;div&gt; and &lt;span&gt; (No CSS, No Table)</h2>
+    <p>Because <code>&lt;div&gt;</code> is block-level (forces a new line = a "row") and <code>&lt;span&gt;</code> is inline (sits side by side = a "column"), nesting three spans inside three divs naturally lines up into a 3x3-like layout with zero CSS:</p>
+
+    <div id="plain-grid">
+      <div><span>[ R1C1 ]</span><span>[ R1C2 ]</span><span>[ R1C3 ]</span></div>
+      <div><span>[ R2C1 ]</span><span>[ R2C2 ]</span><span>[ R2C3 ]</span></div>
+      <div><span>[ R3C1 ]</span><span>[ R3C2 ]</span><span>[ R3C3 ]</span></div>
+    </div>
+  </section>
+
+  <!-- TASK 4 -->
+  <section id="task4">
+    <h2>4. Box Model Gallery (border / margin / padding)</h2>
+    <p>Each row below varies one property (border, then margin, then padding) across three values: <code>0px</code>, <code>5px</code>, <code>10px</code>. The other two properties are held constant so you can isolate the effect.</p>
+
+    <div class="box-gallery">
+      <div class="box-row">
+        <p class="row-label">Varying <strong>border</strong> (margin &amp; padding fixed at 5px)</p>
+        <div class="box-cell"><div class="demo-box border-0">border: 0</div></div>
+        <div class="box-cell"><div class="demo-box border-5">border: 5px</div></div>
+        <div class="box-cell"><div class="demo-box border-10">border: 10px</div></div>
+      </div>
+
+      <div class="box-row">
+        <p class="row-label">Varying <strong>margin</strong> (border &amp; padding fixed at 5px)</p>
+        <div class="box-cell"><div class="demo-box margin-0">margin: 0</div></div>
+        <div class="box-cell"><div class="demo-box margin-5">margin: 5px</div></div>
+        <div class="box-cell"><div class="demo-box margin-10">margin: 10px</div></div>
+      </div>
+
+      <div class="box-row">
+        <p class="row-label">Varying <strong>padding</strong> (border &amp; margin fixed at 5px)</p>
+        <div class="box-cell"><div class="demo-box padding-0">padding: 0</div></div>
+        <div class="box-cell"><div class="demo-box padding-5">padding: 5px</div></div>
+        <div class="box-cell"><div class="demo-box padding-10">padding: 10px</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TASK 5 -->
+  <section id="task5">
+    <h2>5. Same Text, 6 Font Sizes (inline styles, absolute + relative units)</h2>
+    <ul class="font-size-list">
+      <li style="font-size: 12px;">
+        The quick brown fox jumps over the lazy dog. <em>(12px — absolute)</em>
+        <div class="unit-note">Use <code>px</code> when you need pixel-exact, non-scaling text — e.g. an icon's tiny caption or a fixed-size UI badge that must never change regardless of user/browser settings.</div>
+      </li>
+      <li style="font-size: 18pt;">
+        The quick brown fox jumps over the lazy dog. <em>(18pt — absolute)</em>
+        <div class="unit-note"><code>pt</code> (points) comes from print design; use it for content meant to be printed, like a print stylesheet for an invoice or PDF-like report.</div>
+      </li>
+      <li style="font-size: 1.5em;">
+        The quick brown fox jumps over the lazy dog. <em>(1.5em — relative to parent)</em>
+        <div class="unit-note">Use <code>em</code> when a size should scale with its immediate parent — e.g. icon size inside a button that should grow/shrink with that button's own font-size.</div>
+      </li>
+      <li style="font-size: 2rem;">
+        The quick brown fox jumps over the lazy dog. <em>(2rem — relative to root)</em>
+        <div class="unit-note">Use <code>rem</code> for most responsive typography — it scales consistently off the root <code>&lt;html&gt;</code> font-size, so a user's accessibility zoom setting scales your whole site predictably.</div>
+      </li>
+      <li style="font-size: 150%;">
+        The quick brown fox jumps over the lazy dog. <em>(150% — relative to parent)</em>
+        <div class="unit-note">Use <code>%</code> similarly to <code>em</code> when you want a size expressed as a percentage of the inherited font-size, e.g. making a "fine print" note 80% of body text.</div>
+      </li>
+      <li style="font-size: 4vw;">
+        The quick brown fox jumps over the lazy dog. <em>(4vw — relative to viewport width)</em>
+        <div class="unit-note">Use <code>vw</code> for text that should scale with screen width, like a big hero headline that shrinks proportionally on mobile without a media query.</div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- TASK 6 -->
+  <section id="task6">
+    <h2>6. Creative Positioning Demo (static, relative, absolute, fixed)</h2>
+    <p>Below is a little "profile card" scene using four different <code>position</code> values. A <strong>fixed</strong> "back to top" button also floats in the corner of your browser window the whole time you scroll this page.</p>
+
+    <div class="positioning-demo">
+      <div class="pos-static">
+        <strong>static</strong> (default flow)
+        <p class="pos-explain">Use when you don't need any special placement — most elements should stay static; it's predictable and doesn't remove the element from normal layout.</p>
+      </div>
+
+      <div class="pos-relative">
+        <strong>relative</strong> (nudged, but still holds its original space)
+        <p class="pos-explain">Use when you want to shift an element slightly from where it'd normally sit (e.g. nudge an icon 3px to align with text) — and/or to act as an anchor for an absolutely-positioned child.</p>
+        <span class="pos-absolute-badge">absolute child →</span>
+      </div>
+
+      <p class="pos-explain">
+        <strong>absolute</strong> (used above): the orange badge is removed from normal flow and positioned relative to its <em>relative</em> parent — perfect for things like notification badges, tooltips, or dropdown menus pinned to a specific corner of a container.
+      </p>
+    </div>
+
+    <a href="#top" class="pos-fixed-button">↑ Top (fixed)</a>
+    <p class="pos-explain"><strong>fixed</strong> (the "↑ Top" button): stays glued to the viewport regardless of scrolling — ideal for a persistent "back to top" button, a sticky chat widget, or a fixed navbar.</p>
+
+    <p>The footer below is also pinned to the bottom of the screen using <strong>absolute</strong> positioning on the page wrapper (see CSS), so on short pages it never floats up in the middle of the screen.</p>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <p>&copy; 2026 HTML/CSS Practice Assignment — built with vanilla HTML, CSS &amp; JS.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

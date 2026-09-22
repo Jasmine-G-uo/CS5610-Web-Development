@@ -1,0 +1,197 @@
+/* ===== Base / sticky-footer layout (uses positioning, see Task 6) ===== */
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 70px; /* reserve space so content never hides behind the absolute footer */
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222;
+  background: #fafafa;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #2b6cb0;
+  color: white;
+  padding: 12px 24px;
+}
+
+.nav-brand {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 18px;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Main content ===== */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+section {
+  margin-bottom: 48px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #ddd;
+}
+
+code {
+  background: #eee;
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+
+/* ===== Task 3: plain div/span grid, no CSS grid tricks, just visual polish ===== */
+#plain-grid div {
+  margin: 2px 0;
+}
+
+#plain-grid span {
+  margin-right: 4px;
+}
+
+/* ===== Task 4: box model gallery ===== */
+.box-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.box-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.row-label {
+  width: 100%;
+  margin: 0 0 4px 0;
+  font-size: 0.95rem;
+}
+
+.box-cell {
+  background: repeating-conic-gradient(#e2e8f0 0% 25%, #f7fafc 0% 50%) 0 0/16px 16px;
+  padding: 4px;
+}
+
+.demo-box {
+  background: #bee3f8;
+  border-style: solid;
+  border-color: #2b6cb0;
+  font-size: 0.8rem;
+  text-align: center;
+  width: 110px;
+}
+
+.border-0   { border-width: 0px;  margin: 5px; padding: 5px; }
+.border-5   { border-width: 5px;  margin: 5px; padding: 5px; }
+.border-10  { border-width: 10px; margin: 5px; padding: 5px; }
+
+.margin-0   { border-width: 5px; margin: 0px;  padding: 5px; }
+.margin-5   { border-width: 5px; margin: 5px;  padding: 5px; }
+.margin-10  { border-width: 5px; margin: 10px; padding: 5px; }
+
+.padding-0  { border-width: 5px; margin: 5px; padding: 0px; }
+.padding-5  { border-width: 5px; margin: 5px; padding: 5px; }
+.padding-10 { border-width: 5px; margin: 5px; padding: 10px; }
+
+/* ===== Task 5: font size list ===== */
+.font-size-list li {
+  margin-bottom: 18px;
+}
+
+.unit-note {
+  font-size: 0.85rem;
+  color: #555;
+  margin-top: 4px;
+}
+
+/* ===== Task 6: positioning demo ===== */
+.positioning-demo {
+  border: 1px dashed #999;
+  padding: 20px;
+  margin: 16px 0;
+}
+
+.pos-static {
+  background: #edf2f7;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+
+.pos-relative {
+  position: relative;
+  background: #e6fffa;
+  padding: 12px;
+  top: 6px;
+  left: 6px;
+}
+
+.pos-absolute-badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: #ed8936;
+  color: white;
+  font-size: 0.75rem;
+  padding: 4px 8px;
+  border-radius: 10px;
+}
+
+.pos-fixed-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #2b6cb0;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 50%;
+  text-decoration: none;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+.pos-explain {
+  font-size: 0.85rem;
+  color: #555;
+}
