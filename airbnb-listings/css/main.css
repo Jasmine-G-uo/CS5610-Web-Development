@@ -1,0 +1,73 @@
+.brand-mark {
+  display: inline-block;
+  width: 1.75rem;
+  height: 1.75rem;
+  line-height: 1.75rem;
+  text-align: center;
+  border-radius: 50%;
+  background-color: var(--bs-danger);
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+#listings .listing {
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+#listings .listing:hover {
+  transform: translateY(-4px);
+}
+
+#listings .listing-image {
+  position: relative;
+}
+
+#listings .listing img.card-img-top {
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+}
+
+#listings .host-photo {
+  width: 2.5rem;
+  height: 2.5rem;
+  object-fit: cover;
+}
+
+#listings .amenities .badge {
+  font-weight: 400;
+}
+
+.favorite-btn {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  width: 2.25rem;
+  height: 2.25rem;
+  padding: 0;
+  border-radius: 50%;
+  border: none;
+  font-size: 1.25rem;
+  line-height: 1;
+  color: var(--bs-danger);
+  background-color: rgb(255 255 255 / 85%);
+  backdrop-filter: blur(2px);
+}
+
+.favorite-btn:hover,
+.favorite-btn:focus-visible {
+  background-color: #fff;
+  transform: scale(1.1);
+}
+
+.favorite-btn.is-favorite {
+  background-color: var(--bs-danger);
+  color: #fff;
+}
+
+#favoritesFilter.active {
+  background-color: var(--bs-danger);
+  color: #fff;
+}
