@@ -145,7 +145,7 @@ function MainModule(listingsID = "#listings") {
 
       <div class="host d-flex align-items-center gap-2 mt-auto pt-3 border-top">
         <img
-          src="${escapeHTML(listing.host_picture_url)}"
+          src="${escapeHTML(listing.host_thumbnail_url)}"
           class="host-photo rounded-circle"
           alt="Host ${escapeHTML(listing.host_name)}"
           loading="lazy"

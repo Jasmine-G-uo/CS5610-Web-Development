@@ -17,9 +17,9 @@ Every one of the 50 cards renders the fields required by the assignment:
 | Listing name | `name` |
 | Description | `description` (HTML stripped to plain text, truncated to 180 characters) |
 | Amenities | `amenities` (a JSON array stored as a string, so it is parsed; first 6 shown as pills with a `+N more` count) |
-| Host name and photo | `host_name`, `host_picture_url`, plus a Superhost badge from `host_is_superhost` |
+| Host name and photo | `host_name`, `host_thumbnail_url`, plus a Superhost badge from `host_is_superhost` |
 | Price | `price` (parsed from `"$187.00"` into a number) |
-| Thumbnail | `picture_url` |
+| Thumbnail | `picture_url` — the photo at the top of each card. This 2023 dataset has no separate `thumbnail_url` field (older Inside Airbnb exports did), so `picture_url` is the listing's only photo, displayed at a fixed 12rem height with `object-fit: cover`. |
 
 Cards also show the neighbourhood, star rating and review count, room type, and
 capacity, and link out to the listing on Airbnb.
