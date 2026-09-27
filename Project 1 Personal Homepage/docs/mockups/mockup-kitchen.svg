@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 640" font-family="Arial, sans-serif" font-size="14">
+  <rect width="800" height="640" fill="#FFF9F0"/>
+
+  <!-- header -->
+  <rect x="0" y="0" width="800" height="56" fill="#FFF9F0" stroke="#EADCCB"/>
+  <text x="50" y="33" font-weight="bold" fill="#3E3A36">Jiaying Guo</text>
+  <text x="560" y="33" fill="#75695E">Home</text>
+  <text x="614" y="33" fill="#75695E">Hobbies</text>
+  <text x="680" y="33" fill="#3E3A36" text-decoration="underline">Kitchen</text>
+  <circle cx="755" cy="28" r="13" fill="none" stroke="#A67C52"/>
+
+  <text x="50" y="120" font-size="32" font-weight="bold" fill="#3E3A36">Jiaying's Kitchen</text>
+  <rect x="50" y="140" width="380" height="9" rx="4" fill="#E7DCCD"/>
+
+  <line x1="0" y1="190" x2="800" y2="190" stroke="#EADCCB"/>
+  <text x="50" y="230" font-size="11" fill="#A67C52">MENU</text>
+  <text x="50" y="252" font-size="20" font-weight="bold" fill="#3E3A36">Favorite</text>
+  <text x="50" y="276" font-size="20" font-weight="bold" fill="#3E3A36">Dishes</text>
+
+  <!-- recipe entries separated by lines -->
+  <g>
+    <text x="230" y="235" font-weight="bold" fill="#3E3A36">Recipe name</text>
+    <text x="230" y="256" font-size="12" fill="#A67C52">time · difficulty</text>
+    <rect x="230" y="268" width="500" height="8" rx="4" fill="#E7DCCD"/>
+    <text x="230" y="302" font-weight="bold" font-size="13" fill="#3E3A36">Ingredients</text>
+    <text x="490" y="302" font-weight="bold" font-size="13" fill="#3E3A36">Steps</text>
+    <rect x="230" y="312" width="200" height="7" rx="3" fill="#E7DCCD"/>
+    <rect x="230" y="326" width="180" height="7" rx="3" fill="#E7DCCD"/>
+    <rect x="490" y="312" width="240" height="7" rx="3" fill="#E7DCCD"/>
+    <rect x="490" y="326" width="220" height="7" rx="3" fill="#E7DCCD"/>
+  </g>
+  <line x1="230" y1="360" x2="750" y2="360" stroke="#EADCCB"/>
+  <g>
+    <text x="230" y="395" font-weight="bold" fill="#3E3A36">Recipe name</text>
+    <text x="230" y="416" font-size="12" fill="#A67C52">time · difficulty</text>
+    <rect x="230" y="428" width="500" height="8" rx="4" fill="#E7DCCD"/>
+    <text x="230" y="462" font-weight="bold" font-size="13" fill="#3E3A36">Ingredients</text>
+    <text x="490" y="462" font-weight="bold" font-size="13" fill="#3E3A36">Steps</text>
+    <rect x="230" y="472" width="200" height="7" rx="3" fill="#E7DCCD"/>
+    <rect x="490" y="472" width="240" height="7" rx="3" fill="#E7DCCD"/>
+  </g>
+  <line x1="230" y1="510" x2="750" y2="510" stroke="#EADCCB"/>
+  <text x="230" y="545" font-weight="bold" fill="#3E3A36">Recipe name</text>
+  <text x="230" y="566" font-size="12" fill="#A67C52">time · difficulty</text>
+  <rect x="230" y="578" width="500" height="8" rx="4" fill="#E7DCCD"/>
+</svg>

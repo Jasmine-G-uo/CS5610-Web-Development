@@ -1,0 +1,22 @@
+{
+  "name": "jiaying-guo-homepage",
+  "version": "1.0.0",
+  "description": "Personal homepage of Jiaying Guo, built with vanilla HTML5, CSS3 and ES6 modules.",
+  "type": "module",
+  "author": "Jiaying Guo",
+  "license": "MIT",
+  "scripts": {
+    "start": "npx serve .",
+    "lint": "eslint js",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.3.3"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  }
+}
